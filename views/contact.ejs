@@ -1,0 +1,295 @@
+<%- include("./partials/head") %>
+    <style>
+        body {
+            min-height: 100vh;
+            background: lightblue;
+        }
+         .form-control{
+            font-family: cursive;
+            position: relative;
+            width: 100%;
+            padding: 10px 5px;
+            margin: 0 0 25px 0;
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            background: transparent;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            opacity: 1;
+            animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
+            transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
+            font-family: cursive;
+         }
+        .social-link {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 50%;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .social-link:hover,
+        .social-link:focus {
+            background: #ddd;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .contact-form {
+            background: #fff;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            width: 70%;
+        }
+
+        .contact-form .form-control {
+            border-radius: 1rem;
+        }
+
+        .contact-image {
+            text-align: center;
+        }
+
+        .contact-image img {
+            border-radius: 6rem;
+            width: 11%;
+            margin-top: -3%;
+            transform: rotate(29deg);
+        }
+
+        .contact-form form {
+            padding: 14%;
+        }
+
+        .contact-form form .row {
+            margin-bottom: -7%;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 8%;
+            margin-top: -10%;
+            text-align: center;
+            color: #0062cc;
+        }
+
+        .contact-form .btnContact {
+            width: 50%;
+            border: none;
+            border-radius: 1rem;
+            padding: 1.5%;
+            background: #dc3545;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btnContactSubmit {
+            width: 50%;
+            border-radius: 1rem;
+            padding: 1.5%;
+            color: #fff;
+            background-color: #0062cc;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+
+    <div class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-lg-5">
+                    <h2 class="display-4 font-weight-light">Our team</h2>
+                </div>
+            </div>
+
+
+            <div class="row text-center">
+                <!-- Team item-->
+                <div class="col-xl-4 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                            src="#" alt="" width="100"
+                            class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <h5 class="mb-0">Vibhore Shukla</h5>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><a href="#" target="__blank" class="social-link"><i
+                                class="fa fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="__blank" class="social-link"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="__blank" class="social-link"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- End-->
+
+
+                <!-- Team item-->
+                <div class="col-xl-4 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                            src="#" alt=""
+                            width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <h5 class="mb-0">Tanishq Sahu</h5>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                class="fa fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- End-->
+
+                <!-- Team item-->
+                <div class="col-xl-4 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                            src="#" alt=""
+                            width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <h5 class="mb-0">Sourav Dabriwala</h5>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                class="fa fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- End-->
+
+                <!-- Team item-->
+                <div class="col-xl-4 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                            src="#"
+                            alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <h5 class="mb-0">Vedant Gore</h5>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                class="fa fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- End-->
+                <!-- Team item-->
+                <div class="col-xl-4 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                            src="#"
+                            alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <h5 class="mb-0">Aman Chouhan</h5>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                class="fa fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <!-- End-->
+                <!-- Team item-->
+                <div class="col-xl-4 col-sm-6 mb-5">
+                    <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                            src="#" alt=""
+                            width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                        <h5 class="mb-0">Ayush Singh</h5>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><a href="#" target="__blank" class="social-link"><i
+                                class="fa fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="__blank" class="social-link"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="__blank" class="social-link"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+                <!-- End-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="https://png.pngtree.com/png-clipart/20190630/original/pngtree-circular-letter-d-dd-od-vector-logo-design-png-image_4177846.jpg" alt="rocket_contact" />
+        </div>
+        <form method="post">
+            <h3>Drop Us a Message</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" id="name" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your emailadress *" id="email" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" id="pnumber"
+                            value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" id="btn" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                            style="width: 100%; height: 150px;"  id="message" ></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            let name=document.getElementById('name').value;
+            let email=document.getElementById('email').value;
+            let message=document.getElementById('message').value;
+            let pnumber=document.getElementById('pnumber').value;
+            let body = 'name:' +name+ " email:" +email+" phone number: "+pnumber+" message: "+message;
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "deepakchattwaniking15@gmail.com",
+                Password: "exfwnejbpeskutsn",
+                To: 'deepakchattwaniking15@gmail.com',
+                From: email,
+                Subject: "Contact Us Goclasses",
+                Body: body
+            }).then(
+                message => alert("message sent")
+            );
+
+        });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+   </script>
+    <%- include("./partials/foot") %>

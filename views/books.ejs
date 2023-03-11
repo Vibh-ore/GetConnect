@@ -1,0 +1,192 @@
+<%- include("./partials/head") %>
+    <style>
+        :root {
+            --gradient: linear-gradient(to left top, #eb1e0f 50%, #f8e90f 90%) !important;
+        }
+        body{
+            background-color: lightblue;
+        }
+
+        .card {
+            background: rgb(0, 0, 0);
+            border: 2px solid #dd2476;
+            color: rgba(250, 250, 250, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            border: 5px solid;
+            border-image-slice: 1;
+            background: var(--gradient) !important;
+            
+            text-decoration: none;
+            transition: all .4s ease;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: var(--gradient) !important;
+            
+            border: 5px solid #fff !important;
+            box-shadow: #222 1px 0 10px;
+            text-decoration: underline;
+        }
+
+        .book {
+            overflow-y: auto;
+            margin: auto;
+        }
+
+        .bookimage {
+            display: inline-block;
+            height: 20%;
+        }
+    </style>
+
+
+    <div class="container my-5 book">
+        <div class="container mx-auto mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/28a/28af716d5125df62215719b121524ebd.jpg"
+                            style="height: 20rem;" class="card-img-top bookiamge" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Javascript</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Javascript Programming For Absolute Beginners</h6>
+                            <p class="card-text">Ultimate Guide To Javascript Coding,</p>
+                            <a href="https://www.pdfdrive.com/javascript-javascript-programming-for-absolute-beginners-ultimate-guide-to-javascript-coding-javascript-programs-and-javascript-language-4-e195096889.html"
+                                class="btn mr-2">View</a>
+                            <a href="views\books\JavaScript_ JavaScript For Beginners - Learn JavaScript Programming with ease in HALF THE TIME - Everything about the Language, Coding, Programming and Web Pages You need to know ( PDFDrive ).pdf"
+                                class="btn" download="book.pdf"> Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/7f5/7f5804808d741b13858411c83a01041d.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML & CSS</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">HTML & CSS Crash Course For Absolute Beginners:</h6>
+                            <p class="card-text">Learn html and css with easy to follow-step-by-step tutorials</p>
+                            <a href="https://www.pdfdrive.com/html-css-crash-course-learn-html-and-css-with-easy-to-follow-step-by-step-tutorials-e158240321.html"
+                                class="btn  mr-2"> View</a>
+                            <a href="views\books\HTML & CSS Crash Course_ Learn html and css with easy to follow-step-by-step tutorials ( PDFDrive ).pdf"
+                                class="btn" download="book.pdf"> Download </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/063/063294c8f364dddab34b7ef15f603776.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Learn CSS </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">in One Day and Learn It Well (Includes HTML5): </h6>
+                            <p class="card-text">CSS for Beginners with Hands-on Project.</p>
+                            <a href="https://www.pdfdrive.com/learn-css-in-one-day-and-learn-it-well-includes-html5-css-for-beginners-with-hands-on-project-the-only-book-you-need-to-start-coding-in-css-coding-fast-with-hands-on-project-volume-2-e196802719.html"
+                                class="btn mr-2"> View</a>
+                            <a href="views\books\Learn CSS in One Day and Learn It Well (Includes HTML5)_ CSS for Beginners with Hands-on Project. The only book you need to start coding in CSS ... Coding Fast with Hands-On Project) (Volume 2) ( PDFDrive ).pdf"
+                                download="book.pdf" class="btn "> Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/4ef/4ef6fed557af3918f7135ff7e3eff676.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ReactJS</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">ReactJS Course For Absolute Beginners: </h6>
+                            <p class="card-text">Become a professional in web app development</p>
+                            <a href="https://www.pdfdrive.com/reactjs-become-a-professional-in-web-app-development-e186764481.html"
+                                class="btn mr-2">View</a>
+                            <a href="views\books\ReactJS_ Become a professional in web app development ( PDFDrive ).pdf"
+                                class="btn" download="book.pdf"> Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/d68/d689c9e7e4039ef5864c566f9d3d754d.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ANGULARJS</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Angular JS Language Crash Course,</h6>
+                            <p class="card-text">Programming, For Beginners, Learn Coding Fast!</p>
+                            <a href="https://www.pdfdrive.com/angularjs-programming-for-beginners-learn-coding-fast-angular-js-language-crash-course-a-quick-start-guide-tutorial-book-with-hands-on-projects-in-easy-steps-an-ultimate-beginners-guide-e196540317.html"
+                                class="btn mr-2">View</a>
+                            <a href="views\books\ANGULARJS_ Programming, For Beginners, Learn Coding Fast! Angular JS Language Crash Course, A Quick Start Guide, Tutorial Book with Hands-On Projects, In Easy Steps! An Ultimate Beginner’s Guide! ( PDFDrive ).pdf"
+                                download="book.pdf" class="btn">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/574/5746a8f44a1489264cd7e72d29b713a1.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nodejs </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Learning Node.js Development hands-on-nodejs - Ning:</h6>
+                            <p class="card-text">Learn fundamentals of Node.js, and deploy and test Node.js</p>
+                            <a href="https://www.pdfdrive.com/hands-on-nodejs-ning-e35996794.html" class="btn mr-2">View</a>
+                            <a href="views\books\hands-on-nodejs - Ning ( PDFDrive ).pdf" download="book.pdf"
+                                class="btn">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/12c/12c7eecf0522b4b31ca2f6b76934e5c2.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">C Programming</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Learn C Programming; C Programming Language:</h6>
+                            <p class="card-text">This C book gave simple instructions which help you to create useful, reliable C code..</p>
+                            <a href="https://www.pdfdrive.com/learn-c-programming-c-programming-language-tutorialspoint-e158140781.html"
+                                class="btn mr-2"> View</a>
+                            <a href="views\books\Learn C Programming; C Programming Language – TutorialsPoint ( PDFDrive ).pdf"
+                                download="book.pdf" class="btn">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/3ea/3ea25b58317bd3a2feb4329db7cb5f3b.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">C/C++ </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">tarting Out with C++ from Control Structures to Objects plus</h6>
+                            <p class="card-text">It is step-by-step presentation helps the beginner as well as experienced developers.</p>
+                            <a href="https://www.pdfdrive.com/cc-language-reference-e4078335.html" class="btn mr-2">View</a>
+                            <a href="views\books\C++.pdf" class="btn" download="book.pdf">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.asaha.com/assets/thumbs/44c/44c75150d2524b17919d1dcf02c483ba.jpg"
+                            style="height: 20rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Python </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Learn Python in One Day and Learn It Well: </h6>
+                            <p class="card-text">Python for Beginners with Hands-on Project. The only book you need</p>
+                            <a href="https://www.pdfdrive.com/learn-python-in-one-day-and-learn-it-well-python-for-beginners-with-hands-on-project-the-only-book-you-need-to-start-coding-in-python-immediately-e183833259.html"
+                                class=" mr-2 btn mr-2">View</a>
+                            <a href="views\books\Learn Python in One Day and Learn It Well_ Python for Beginners with Hands-on Project. The only book you need to start coding in Python immediately ( PDFDrive ).pdf"
+                                download="book.pdf" class="btn mr-2">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include("./partials/foot") %>

@@ -1,0 +1,393 @@
+<%- include("./partials/head") %>
+  <style>
+    /*
+=============== 
+Variables
+===============
+*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --brand-purple: hsl(238, 52%, 38%);
+      --brand-purple-transparent: hsla(238, 52%, 38%, 0.4);
+      --brand-green: hsl(128, 52%, 47%);
+      --brand-green-transparent: hsla(128, 52%, 47%, 0.4);
+      --brand-dark-blue: hsl(204, 100%, 37%);
+      --brand-light-blue: hsl(198, 76%, 52%);
+      --header-height: 10vh;
+      --body-background: hsla(0, 0%, 100%, 1);
+      --header-background: rgba(255, 255, 255, 0.8);
+      --text-color: rgba(0, 0, 0, 0.8);
+      --important-text-color: black;
+      --nav-link-hover-background-color: hsla(198, 76%, 52%, 0.2);
+    }
+
+    /* addeded media prefernce dark/light */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --body-background: rgb(8, 8, 8);
+        --header-background: rgba(0, 0, 0, 1);
+        --text-color: rgba(255, 255, 255, 0.8);
+        --important-text-color: white;
+        --nav-link-hover-background-color: rgba(255, 255, 255, 0.2);
+        --border-color: gold;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --body-background: hsla(0, 0%, 100%, 1);
+        --header-background: rgba(255, 255, 255, 0.8);
+        --text-color: rgba(0, 0, 0, 0.8);
+        --important-text-color: black;
+        --nav-link-hover-background-color: hsla(198, 76%, 52%, 0.2);
+        --border-color: gold;
+      }
+    }
+
+    /*  end */
+    body {
+
+      width: 100%;
+      height: 100vh;
+      background-color:lightblue;
+    }
+
+
+
+
+    #result {
+      overflow-y: auto;
+      overflow-x: auto;
+      color: black;
+
+      height: 63vh;
+      width: 30%;
+      float: right;
+
+
+      margin: 10px;
+    }
+
+    #result h1 {
+      font-size: 1.5rem;
+    }
+
+    #searchbar {
+      /* position: fixed; */
+      display: inline-block;
+      width: 100%;
+    }
+
+
+
+
+
+    #searchbar form input {
+      width: 70%;
+
+    }
+
+    #searchbar form button {
+      display: inline;
+      border: none;
+      background-color: white;
+      width: 10%;
+
+    }
+
+    #searchbar form button:hover {
+
+      border: none;
+      background-color: rgb(201, 193, 193);
+
+
+    }
+
+
+
+
+    .whole {
+
+
+      display: inline-block;
+      width: 60%;
+      height: 65vh;
+      overflow-y: auto;
+    }
+
+    iframe {
+      margin: auto;
+      margin-top: 20px;
+      display: in;
+      width: 80%;
+      display: block;
+    }
+
+    #result {
+      display: inline-block;
+    }
+
+    .search-input {
+      position: relative;
+      width: 100%;
+      padding: 10px 5px;
+      margin: 0 0 25px 0;
+      border: none;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      background: transparent;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      opacity: 1;
+      animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
+      transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
+      outline: none;
+      border-bottom: 2px solid #E37F00;
+      font-family: cursive;
+
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-bottom: 2px solid #3542f3;
+    }
+
+    
+  </style>
+  </head>
+
+
+
+  <body> 
+    
+    <!-- Section: Block Content -->
+    <section>
+
+      <div class="card my-4">
+        <div class="card-body">
+
+          <h5 class="text-center font-weight-bold mb-4">Recently Added Classes</h5>
+
+          <hr>
+
+
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-12 mb-3 mx-auto">
+
+              <div class="media ">
+                <img class="d-flex mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2zzeXoSkRatsl-RWm03LMhBfM2lSe4iJMAKgNZlqf79Vy6GKXGI6JvvMSrxvJPVeRtQ&usqp=CAU"
+                  alt=" Generic placeholder image" style="width: 5rem;height: 5rem; ">
+                <div class="media-body ">
+                  <h6 class="mt-1 font-weight-bold"><a href="https://classroom.google.com/u/1/c/NTA0ODI4ODU5MzU5"
+                      target="__blank">WEB DEV</a><a><span class="badge badge-warning float-right">New</span></a></h6>
+
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <img class="d-flex mr-3" src="https://www.vbtcafe.com/wp-content/uploads/2021/07/Database-Management-SystemsDBMS.jpg"
+                  alt="Generic placeholder image" style="width: 5rem; height: 5rem;">
+                <div class="media-body">
+                  <h6 class="mt-1 font-weight-bold"><a href="https://classroom.google.com/u/1/c/NDkyMjQ1NTExNzI5"
+                      target="__blank">DBMS</a><a><span class="badge badge-info float-right">Project</span></a></h6>
+
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <img class="d-flex mr-3" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Tu2z9cvG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/696/1%2A6UpwEDOw04H5fKyaMGXpSw.png"
+                  alt="Generic placeholder image" style="width: 5rem; height: 5rem;">
+                <div class="media-body">
+                  <h6 class="mt-1 font-weight-bold"><a href="https://classroom.google.com/u/1/c/NTA0ODMwNDY1OTYw"
+                      target="__blank">CTP</a><a><span class="badge badge-danger float-right">Active</span></a></h6>
+
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <img class="d-flex mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZoD4TXzokbhOxagDnvZEN_ZW-NF_k3T3MA&usqp=CAU"
+                  alt="Generic placeholder image" style="width: 5rem; height: 5rem;">
+                <div class="media-body">
+                  <h6 class="mt-1 font-weight-bold"><a href="https://classroom.google.com/u/1/c/NTc0MzQ2MTg3ODMz"
+                      target="__blank">UNIX</a><a><span class="badge badge-success float-right">Visted</span></a></h6>
+
+                </div>
+              </div>
+
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <hr>
+
+          <p class="text-center mt-4 mb-1"><a href="https://classroom.google.com/u/1/h" target="__blank">View All
+              Classes</a></p>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- Section: Block Content -->
+
+
+
+    <br><br><br>
+
+
+    <div class="whole bg-light">
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/irqbmMNs2Bo" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/l1EssrLxt7E" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/vLPdBp9vv9Y" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/kBdlM6hNDAE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+    </div>
+
+
+
+
+    <div id="result">
+      <div id="searchbar">
+        <form id="form" autocomplete="off">
+          <input type="text" id="query" class="search-input" placeholder="search..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+
+
+        </form>
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- Jumbotron -->
+    <div class="bg-light" style="height: 60vh;">
+
+      <div class="container my-5  ">
+
+        <div class="p-5 text-center bg-image rounded-3" style="
+  background-image: url('https://i1.wp.com/chatrandom.download/wp-content/uploads/2021/03/random-video-chat.png');
+  height: 400px; background-color: rgba(238, 234, 234, 0.6);
+  ">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 class="mb-3">Connect : Chat</h1>
+                <h4 class="mb-3">Visit our chat site</h4>
+                <a class="btn btn-outline-light btn-lg" href="http://localhost:3000/" role="button">Chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+
+
+
+    <div style="   width: 100%; position: relative; bottom: 0;height: 22vh;">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="/home" class="nav-link px-2 text-white btn btn-primary mx-2">Home</a></li>
+          <li class="nav-item"><a href="/books" class="nav-link px-2 text-white btn btn-primary mx-2" >Books</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link px-2 text-white btn btn-primary mx-2">About</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link px-2 text-white btn btn-primary mx-2">Contact</a></li>
+
+        </ul>
+
+     <p class="text-center text-muted">© 2023 <a href="https://github.com/deep-69bits/" target="__blank"> <span style="color: rgb(100, 96, 96); cursor: pointer;" >vibhore.</span> </a> </p>
+       
+      </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+      $("#form").submit(function (e) {
+        e.preventDefault();
+
+        var query = $("#query").val();
+        var API_key = "AIzaSyDH6GoI4u9kAf8ilBqE_cKAiQ50zbYTb-k";
+        var url =
+          "http://api.serpstack.com/search?access_key=" +
+          API_key +
+          "& type=web&query=" +
+          query;
+        $.get(url, function (data) {
+          data.organic_results.forEach((res) => {
+            result = `
+        <h1>${res.title}</h1><br><a href= "${res.url}">${res.url}</a> 
+        <p>${res.snippet}</p>
+        `;
+            $("#result").append(result);
+          });
+        });
+      });
+
+      var API_key = "AIzaSyDH6GoI4u9kAf8ilBqE_cKAiQ50zbYTb-k";
+      var url =
+        "http://api.serpstack.com/search?access_key=" +
+        API_key +
+        "& type=web&query=" +
+        query;
+
+
+
+
+
+      function dictonary(event) {
+        let word = document.getElementById("word").value;
+
+        let result = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + word)
+          .then(response => response.json())
+          .then(data => console.log(data));
+        console.log(result.data);
+
+      }
+    </script>
+
+    <!-- API key - 
+       AIzaSyDH6GoI4u9kAf8ilBqE_cKAiQ50zbYTb-k 
+      -->
