@@ -54,7 +54,7 @@ or
     node ./app.js  
     ```
 ## Authors  
-* [@](https://github.com/deep-69bits/)
+* [@Vibh-ore](https://github.com/Vibh-ore)
 
 
 
